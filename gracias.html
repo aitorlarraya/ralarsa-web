@@ -1,42 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mensaje enviado | Ralarsa Inversiones S.L.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+<form action="https://formspree.io/f/xgojnaoa" method="POST" class="contact-form">
 
-<body>
+  <label>Nombre</label>
+  <input type="text" name="nombre" required>
 
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <div class="logo">
-      <a href="index.html">RALARSA INVERSIONES S.L.</a>
-    </div>
-    <div class="nav-links">
-      <a href="promociones.html">Promociones</a>
-      <a href="empresa.html">Empresa</a>
-      <a href="porque.html">Por Qué Nosotros</a>
-      <a href="entregados.html">Entregados</a>
-      <a href="asesoria.html">Asesoría</a>
-      <a href="contacto.html" class="btn-dark">Contacto</a>
-    </div>
-  </div>
+  <label>Email</label>
+  <input type="email" name="email" required>
 
-  <!-- HERO GRACIAS -->
-  <section class="hero-contacto">
-    <div class="hero-contacto-content">
-      <h1>¡Mensaje enviado correctamente!</h1>
-      <p>Gracias por contactar con Ralarsa Inversiones S.L.<br>
-      Te responderemos lo antes posible.</p>
-    </div>
-  </section>
+  <label>Mensaje</label>
+  <textarea name="mensaje" required></textarea>
 
-  <!-- BOTÓN VOLVER -->
-  <section class="gracias-section">
-    <a href="index.html" class="btn-light">Volver a la página principal</a>
-  </section>
+  <!-- Opciones ocultas -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
 
-</body>
-</html>
+  <!-- Redirección tras enviar -->
+  <input type="hidden" name="_redirect" value="https://aitorlarraya.github.io/ralarsa-web/gracias.html">
+
+  <button type="submit">Enviar mensaje</button>
+
+</form>
