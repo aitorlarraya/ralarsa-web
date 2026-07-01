@@ -1,59 +1,51 @@
-async function cargarPromociones() {
-    const respuesta = await fetch('promociones.json');
-    const promociones = await respuesta.json();
-
-    const lista = document.getElementById('lista-promociones');
-    if (!lista) return;
-
-    lista.innerHTML = '';
-
-    promociones.forEach(promo => {
-        const card = document.createElement('div');
-        card.className = 'promo-card';
-
-        card.innerHTML = `
-            <h3>${promo.titulo}</h3>
-            <p>${promo.descripcion}</p>
-            <p><strong>Estado:</strong> ${promo.estado}</p>
-            <a href="promocion.html?id=${promo.id}">Ver promoción</a>
-        `;
-
-        lista.appendChild(card);
-    });
+// Cargar lista de promociones
+if (document.getElementById("lista-promociones")) {
+    fetch("promociones.json")
+        .then(r => r.json())
+        .then(data => {
+            let html = "";
+            data.forEach(p => {
+                html += `
+                <div class="card">
+                    <img src="${p.imagen_destacada || 'img/default.jpg'}">
+                    <div class="card-content">
+                        <h3>${p.titulo}</h3>
+                        <p>${p.estado}</p>
+                        <a href="promocion.html?id=${p.id}">Ver promoción</a>
+                    </div>
+                </div>`;
+            });
+            document.getElementById("lista-promociones").innerHTML = html;
+        });
 }
 
-async function cargarPromocion() {
+// Cargar ficha individual
+if (document.getElementById("detalle-promocion")) {
     const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
+    const id = params.get("id");
 
-    if (!id) return;
+    fetch("promociones.json")
+        .then(r => r.json())
+        .then(data => {
+            const p = data.find(x => x.id === id);
 
-    const respuesta = await fetch('promociones.json');
-    const promociones = await respuesta.json();
+            let html = `
+                <h1>${p.titulo}</h1>
+                <p>${p.descripcion}</p>
+                <p><strong>Estado:</strong> ${p.estado}</p>
+                <p><strong>Ubicación:</strong> ${p.ubicacion}</p>
+                <h2>Galería</h2>
+            `;
 
-    const promo = promociones.find(p => p.id === id);
-    if (!promo) return;
+            p.imagenes.forEach(img => {
+                html += `<img src="${img}" style="width:300px;margin:10px;">`;
+            });
 
-    document.getElementById('titulo').innerText = promo.titulo;
-    document.getElementById('descripcion').innerText = promo.descripcion;
-    document.getElementById('estado').innerText = promo.estado;
-    document.getElementById('ubicacion').innerText = promo.ubicacion;
+            html += `<h2>Planos</h2>`;
+            p.planos.forEach(pdf => {
+                html += `<a href="${pdf}" download>Descargar plano</a><br>`;
+            });
 
-    const galeria = document.getElementById('galeria');
-    promo.imagenes.forEach(img => {
-        const imagen = document.createElement('img');
-        imagen.src = img;
-        galeria.appendChild(imagen);
-    });
-
-    const planos = document.getElementById('planos');
-    promo.planos.forEach(pdf => {
-        const enlace = document.createElement('a');
-        enlace.href = pdf;
-        enlace.innerText = "Descargar plano";
-        planos.appendChild(enlace);
-    });
+            document.getElementById("detalle-promocion").innerHTML = html;
+        });
 }
-
-cargarPromociones();
-cargarPromocion();
