@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sarriguren-6viviendas",
+    "titulo": "Promoción de 6 viviendas en Sarriguren",
+    "descripcion": "Viviendas de alta eficiencia energética en el Valle de Egüés.",
+    "estado": "En proyecto",
+    "imagenes": [
+      "img/sarriguren/render1.jpg",
+      "img/sarriguren/render2.jpg"
+    ],
+    "planos": [
+      "pdf/sarriguren/plano1.pdf"
+    ],
+    "ubicacion": "Sarriguren, Valle de Egüés"
+  }
+]
