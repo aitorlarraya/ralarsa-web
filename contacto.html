@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<form action="https://formspree.io/f/ralarsainversiones@outlook.es" method="POST" class="contact-form">
 
-<header>
-    <div class="logo">Ralarsa Inversiones S.L.</div>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="promociones.html">Promociones</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-</header>
+  <label>Nombre</label>
+  <input type="text" name="nombre" required>
 
-<h1>Contacto</h1>
-<p>Email: info@ralarsainversiones.com</p>
-<p>Teléfono: 600 000 000</p>
+  <label>Email</label>
+  <input type="email" name="email" required>
 
-<footer>
-    <p>© 2026 Ralarsa Inversiones S.L.</p>
-</footer>
+  <label>Mensaje</label>
+  <textarea name="mensaje" required></textarea>
 
-</body>
-</html>
+  <!-- Opciones ocultas -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- Redirección tras enviar -->
+  <input type="hidden" name="_redirect" value="https://aitorlarraya.github.io/ralarsa-web/gracias.html">
+
+  <button type="submit">Enviar mensaje</button>
+
+</form>
