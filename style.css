@@ -299,3 +299,26 @@ html, body {
 .contact-form button:hover {
   background: #000;
 }
+.gracias-section {
+  max-width: 600px;
+  margin: 120px auto;
+  text-align: center;
+  color: #333;
+}
+
+.gracias-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.gracias-section a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.gracias-section a:hover {
+  text-decoration: underline;
+}
