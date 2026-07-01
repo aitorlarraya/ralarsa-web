@@ -30,7 +30,7 @@ body {
 
 .hero {
 background: url('img/img/RENDER EJEMPLO.jpg') center/cover no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
