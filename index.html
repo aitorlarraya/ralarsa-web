@@ -100,7 +100,22 @@
 
 <section id="contacto" class="section">
     <h3>Contacto</h3>
-    <p>Para más información sobre nuestras promociones, puede escribirnos a <strong>info@ralarsainversiones.es</strong> o visitar nuestras oficinas en Pamplona.</p>
+    <p>Para más información sobre nuestras promociones, puede escribirnos a <strong>info@ralarsainversiones.es</strong> o usar el siguiente formulario:</p>
+
+    <form action="https://formspree.io/f/xgojnaoa" method="POST" style="margin-top: 20px;">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
+
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje" required style="width:100%; padding:10px; height:120px; margin-bottom:15px;"></textarea><br>
+
+        <button type="submit" style="padding:12px 25px; background:#0078d7; color:white; border:none; cursor:pointer; font-size:16px;">
+            Enviar mensaje
+        </button>
+    </form>
 </section>
 
 <footer>
