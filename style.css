@@ -228,7 +228,11 @@ html, body {
     font-size: 1.4rem;
   }
 }
-/* HERO CONTACTO */
+
+/* ============================
+   HERO CONTACTO
+   ============================ */
+
 .hero-contacto {
   background: #222;
   color: #fff;
@@ -246,7 +250,10 @@ html, body {
   opacity: 0.9;
 }
 
-/* SECCIÓN CONTACTO */
+/* ============================
+   SECCIÓN CONTACTO
+   ============================ */
+
 .contacto-section {
   max-width: 700px;
   margin: 60px auto;
@@ -259,7 +266,10 @@ html, body {
   margin-bottom: 30px;
 }
 
-/* FORMULARIO */
+/* ============================
+   FORMULARIO
+   ============================ */
+
 .contact-form {
   max-width: 500px;
   margin: 40px auto;
@@ -299,33 +309,16 @@ html, body {
 .contact-form button:hover {
   background: #000;
 }
+
+/* ============================
+   GRACIAS PAGE
+   ============================ */
+
 .gracias-section {
   max-width: 600px;
-  margin: 120px auto;
+  margin: 80px auto;
   text-align: center;
   color: #333;
-}
-
-.gracias-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.gracias-section a {
-  display: inline-block;
-  margin-top: 20px;
-  color: #222;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.gracias-section a:hover {
-  text-decoration: underline;
-}
-.gracias-section {
-  max-width: 600px;
-  margin: 60px auto;
-  text-align: center;
 }
 
 .gracias-section .btn-light {
