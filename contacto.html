@@ -51,13 +51,22 @@
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
 
-      <!-- Redirección tras enviar -->
+      <!-- Redirección tras enviar (Formspree la ignorará en plan gratuito, pero la dejamos) -->
       <input type="hidden" name="_redirect" value="https://aitorlarraya.github.io/ralarsa-web/gracias.html">
 
       <button type="submit">Enviar mensaje</button>
 
     </form>
   </section>
+
+  <!-- REDIRECCIÓN MANUAL (FUNCIONA SIEMPRE) -->
+  <script>
+    document.querySelector("form").addEventListener("submit", function() {
+      setTimeout(function() {
+        window.location.href = "gracias.html";
+      }, 600);
+    });
+  </script>
 
 </body>
 </html>
