@@ -2,15 +2,11 @@
   {
     "id": "sarriguren-6viviendas",
     "titulo": "Promoción de 6 viviendas en Sarriguren",
-    "descripcion": "Viviendas de alta eficiencia energética ubicadas en el Valle de Egüés, diseñadas para maximizar confort, iluminación natural y eficiencia energética.",
+    "descripcion": "Viviendas de alta eficiencia energética ubicadas en el Valle de Egüés.",
     "estado": "En proyecto",
-    "imagenes": [
-      "img/sarriguren/render1.jpg",
-      "img/sarriguren/render2.jpg"
-    ],
-    "planos": [
-      "pdf/sarriguren/plano1.pdf"
-    ],
-    "ubicacion": "Sarriguren, Valle de Egüés (Navarra)"
+    "ubicacion": "Sarriguren, Valle de Egüés",
+    "imagen_destacada": "img/sarriguren/render1.jpg",
+    "imagenes": [],
+    "planos": []
   }
 ]
