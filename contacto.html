@@ -1,21 +1,63 @@
-<form action="https://formspree.io/f/xgojnaoa" method="POST" class="contact-form">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Ralarsa Inversiones S.L.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <label>Nombre</label>
-  <input type="text" name="nombre" required>
+<body>
 
-  <label>Email</label>
-  <input type="email" name="email" required>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">RALARSA INVERSIONES S.L.</a>
+    </div>
+    <div class="nav-links">
+      <a href="promociones.html">Promociones</a>
+      <a href="empresa.html">Empresa</a>
+      <a href="porque.html">Por Qué Nosotros</a>
+      <a href="entregados.html">Entregados</a>
+      <a href="asesoria.html">Asesoría</a>
+      <a href="contacto.html" class="btn-dark">Contacto</a>
+    </div>
+  </div>
 
-  <label>Mensaje</label>
-  <textarea name="mensaje" required></textarea>
+  <!-- HERO CONTACTO -->
+  <section class="hero-contacto">
+    <div class="hero-contacto-content">
+      <h1>Contacto</h1>
+      <p>Estamos a tu disposición para resolver dudas, asesorarte y acompañarte en tu proyecto inmobiliario.</p>
+    </div>
+  </section>
 
-  <!-- Opciones ocultas -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+  <!-- FORMULARIO -->
+  <section class="contacto-section">
+    <h2>Envíanos un mensaje</h2>
 
-  <!-- Redirección tras enviar -->
-  <input type="hidden" name="_redirect" value="https://aitorlarraya.github.io/ralarsa-web/gracias.html">
+    <form action="https://formspree.io/f/xgojnaoa" method="POST" class="contact-form">
 
-  <button type="submit">Enviar mensaje</button>
+      <label>Nombre</label>
+      <input type="text" name="nombre" required>
 
-</form>
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Mensaje</label>
+      <textarea name="mensaje" required></textarea>
+
+      <!-- Opciones ocultas -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Redirección tras enviar -->
+      <input type="hidden" name="_redirect" value="https://aitorlarraya.github.io/ralarsa-web/gracias.html">
+
+      <button type="submit">Enviar mensaje</button>
+
+    </form>
+  </section>
+
+</body>
+</html>
