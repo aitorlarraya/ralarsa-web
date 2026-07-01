@@ -228,3 +228,74 @@ html, body {
     font-size: 1.4rem;
   }
 }
+/* HERO CONTACTO */
+.hero-contacto {
+  background: #222;
+  color: #fff;
+  padding: 120px 60px 80px 60px;
+  text-align: left;
+}
+
+.hero-contacto h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-contacto p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* SECCIÓN CONTACTO */
+.contacto-section {
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+  color: #333;
+}
+
+.contacto-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+}
+
+.contact-form button {
+  background: #222;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background: #000;
+}
