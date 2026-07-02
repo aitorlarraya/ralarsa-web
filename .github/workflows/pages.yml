@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'   # publica tu web tal cual desde la raíz
+          path: './'   # publica tu web tal cual desde la raíz
 
       - name: Deploy to GitHub Pages
         id: deployment
