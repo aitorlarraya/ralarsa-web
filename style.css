@@ -421,3 +421,79 @@ html, body {
   background: #ddd;
   border-radius: 8px;
 }
+/* TITULO */
+.promociones-titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.promociones-subtitulo {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.promociones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 40px;
+}
+
+/* TARJETA */
+.promocion-card {
+    position: relative;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.promocion-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* IMAGEN */
+.promocion-img {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ETIQUETA */
+.promocion-etiqueta {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #d88b2b;
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.promocion-etiqueta.construccion {
+    background: #444;
+}
+
+/* TEXTO */
+.promocion-card h3 {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.promocion-ubicacion {
+    margin: -10px 20px 20px;
+    color: #777;
+    font-size: 15px;
+}
